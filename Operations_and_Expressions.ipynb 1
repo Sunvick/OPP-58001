@@ -1,0 +1,541 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Operations and Expressions",
+      "provenance": [],
+      "authorship_tag": "ABX9TyPndLdMEvym76tNHkbPEJGd",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Sunvick/OPP-58001/blob/main/Operations_and_Expressions.ipynb%201\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Boolean Operators**"
+      ],
+      "metadata": {
+        "id": "XNsZUPcxAzYA"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(10>9)\n",
+        "print(10==9)\n",
+        "print(10!=9)\n",
+        "print(10<9)"
+      ],
+      "metadata": {
+        "id": "AgjqKGayBBmY"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**bool() Fnction**"
+      ],
+      "metadata": {
+        "id": "I_3bJkwDBF-t"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(bool(\"Maria\"))\n",
+        "print(bool(19))\n",
+        "print(bool([]))\n",
+        "print(bool(0))\n",
+        "print(bool(1))\n",
+        "print(bool(None))\n",
+        "print(bool(False))"
+      ],
+      "metadata": {
+        "id": "Cg7JVHHaBHYd"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Function can return a Boolean**"
+      ],
+      "metadata": {
+        "id": "Q9eMH0T0BdAy"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def myFunction():\n",
+        "  return False \n",
+        "\n",
+        "print(myFunction())\n",
+        "def myFunction():\n",
+        "  return True\n",
+        "\n",
+        "if myFunction():\n",
+        "  print(\"Yes!\")\n",
+        "else:\n",
+        "  print(\"No!\")"
+      ],
+      "metadata": {
+        "id": "yruZQKqNBg7T"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Application 1**"
+      ],
+      "metadata": {
+        "id": "9PdM7w7cB0u1"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(10>9)\n",
+        "\n",
+        "a=6\n",
+        "b=7\n",
+        "print(a==b)\n",
+        "print(a!=a)\n",
+        "a=60\n",
+        "b=13\n",
+        "print(a>b)\n",
+        "\n",
+        "if a<b:\n",
+        "  print(\"a is less than b\")\n",
+        "else:\n",
+        "  print(\"a is greater than b\")"
+      ],
+      "metadata": {
+        "id": "A8ZsPhXkB37T"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Python Operators**"
+      ],
+      "metadata": {
+        "id": "gXbr7cR8B50g"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(10+3)\n",
+        "print(10-3)\n",
+        "print(10*3)\n",
+        "print(10%3)\n",
+        "print(10/3)"
+      ],
+      "metadata": {
+        "id": "ZMfsr04aB-OT"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Bitwise Operators**"
+      ],
+      "metadata": {
+        "id": "MeHIHvX5B_wm"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# a = 60, binary 0011 1100\n",
+        "# b = 13, binary 0000 1101\n",
+        "\n",
+        "print(a&b)\n",
+        "print(a|b)\n",
+        "print(a^b)\n",
+        "print(a<<1)\n",
+        "print(a<<2)"
+      ],
+      "metadata": {
+        "id": "5B4tRjieCENi"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Application 2**"
+      ],
+      "metadata": {
+        "id": "WgS-zlQvCGHQ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Assignment Operators\n",
+        "x=2\n",
+        "\n",
+        "x+=3 #same as x=x+3\n",
+        "print(x)\n",
+        "\n",
+        "x-=3 #same as x=x-3\n",
+        "print(x)\n",
+        "\n",
+        "x*=3 #same as x=x*3\n",
+        "print(x) \n",
+        "\n",
+        "x/=3 #same as x=x/3\n",
+        "print(x)\n",
+        "\n",
+        "x%=3 #same as x=x%3\n",
+        "print(x)"
+      ],
+      "metadata": {
+        "id": "HZ8bA7JnCIic"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Logical Operators**"
+      ],
+      "metadata": {
+        "id": "swQ42xYfCKZb"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "k = True\n",
+        "l = False\n",
+        "print(k and l)\n",
+        "print(k or l)\n",
+        "print(not(k or l))"
+      ],
+      "metadata": {
+        "id": "7ciRTmbrCQx_"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Identity Operators**"
+      ],
+      "metadata": {
+        "id": "oV3j-9w1CSbX"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "k is l\n",
+        "k is not l"
+      ],
+      "metadata": {
+        "id": "ODa1npyaCX4r"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Control Structure\n"
+      ],
+      "metadata": {
+        "id": "QDU6s6VKCZaf"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**If Statement**\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "5QQ-0hJRChJf"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "v = 2\n",
+        "z = 1\n",
+        "\n",
+        "if 1<2:\n",
+        "  print(\"1 is less than 2\")"
+      ],
+      "metadata": {
+        "id": "-Zri04xFCkr8"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Elif Statement**"
+      ],
+      "metadata": {
+        "id": "P8vPmjhBCped"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if v<z:\n",
+        "  print(\"v is less than z\")\n",
+        "elif v>z:\n",
+        "  print(\"v is greater than z\")"
+      ],
+      "metadata": {
+        "id": "GfsWCP6fCtUl"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Else Statement**"
+      ],
+      "metadata": {
+        "id": "UIrFsOWtCwLN"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "number = int(input()) #to know if the number is positive or negative\n",
+        "\n",
+        "if number>0:\n",
+        "  print(\"Positive\")\n",
+        "elif number<0:\n",
+        "  print(\"Negative\")\n",
+        "else:\n",
+        "  print(\"number is equal to zero\")"
+      ],
+      "metadata": {
+        "id": "4pH7ffFRCzZk"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Application 3**"
+      ],
+      "metadata": {
+        "id": "r00Fgr6ZC1op"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Develop a Python program that will accept if the person is entitled to vote or not\n",
+        "age = int(input())\n",
+        "\n",
+        "if age>=18:\n",
+        "  print(\"You are qualified to vote\")\n",
+        "else:\n",
+        "  print(\"You are not qualified to vote\")"
+      ],
+      "metadata": {
+        "id": "qNss_coMC4vC"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Nested If...Else**"
+      ],
+      "metadata": {
+        "id": "EzXDSMGmC7j4"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "u = int(input())\n",
+        "if u>10:\n",
+        "  print(\"u is above 10\")\n",
+        "  if u>20:\n",
+        "    print(\"u is above 20\")\n",
+        "    if u>30:\n",
+        "      print(\"u is above 30\")\n",
+        "      if u>40:\n",
+        "        print(\"u is above 40\")\n",
+        "      else:\n",
+        "        print(\"u is below 40\")\n",
+        "        if u>50:\n",
+        "          print(\"u is above 50\")\n",
+        "        else:\n",
+        "          print(\"u is below 50\")"
+      ],
+      "metadata": {
+        "id": "6RHG3kxNGKY7"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Loop Structure**"
+      ],
+      "metadata": {
+        "id": "r_lepWIlC_da"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "week = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']\n",
+        "season = [\"Rainy\", \"Sunny\"]\n",
+        "\n",
+        "for x in week:\n",
+        "  for y in season:\n",
+        "    print(y,x)"
+      ],
+      "metadata": {
+        "id": "VQNT_FQUDBNc"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Break Statement**"
+      ],
+      "metadata": {
+        "id": "76bI6qfJDE8-"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for x in week:\n",
+        "  print(x)\n",
+        "  if x == \"Thursday\":\n",
+        "    break"
+      ],
+      "metadata": {
+        "id": "vFXr-6N-DG4q"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**While Loop**"
+      ],
+      "metadata": {
+        "id": "4e9t7JLUDIR5"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "i=1\n",
+        "while i<6:\n",
+        "  print(i)\n",
+        "  i+=1"
+      ],
+      "metadata": {
+        "id": "Qf0hRmQrDNol"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Application 4**"
+      ],
+      "metadata": {
+        "id": "8ZkSET24DP0T"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Create a Python program that displays numbers from 1 to 4 using while loop statement\n",
+        "\n",
+        "n=1\n",
+        "while n<5:\n",
+        "  print(n)\n",
+        "  n+=1"
+      ],
+      "metadata": {
+        "id": "K2Ag6oaWDUSU"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Application 5**"
+      ],
+      "metadata": {
+        "id": "oND37-4ZDVuD"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Create a Python program that displays 4 numbers using while loop and break statement\n",
+        "\n",
+        "r=1\n",
+        "while r<=4:\n",
+        "  if r==4:\n",
+        "    print(r)\n",
+        "  r+=1"
+      ],
+      "metadata": {
+        "id": "SITOCV58DYt4"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
